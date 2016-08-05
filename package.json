@@ -3,7 +3,7 @@
   "description": "angularGhostGame Project Generated from HotTowel Angular",
   "version": "0.0.1",
   "engines": {
-    "node": "4.1.1"
+    "node": "4.4.7"
   },
   "scripts": {
     "init": "npm install",
