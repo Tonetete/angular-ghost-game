@@ -1,0 +1,33 @@
+<section class="mainbar">
+  <section class="matter">
+    <div class="container">
+      <div class="row">
+        <div class="widget wviolet">
+          <div ht-widget-header title="{{ghost.title}}"></div>
+          <div class="widget-content user">
+            <div class="input-group">
+              <span class="input-group-addon">Insert Word</span>
+              <input ng-focus="ghost.focusInput" ng-disabled="ghost.disabledInputWord" ng-keydown="ghost.unableDeleteKey($event)" type="text" class="form-control"
+               name="word" ng-model="ghost.word" ng-change="ghost.insertLetter()"/>
+               <div class="input-group" role="group">
+                 <button ng-click="ghost.restartGame()" ng-disabled="ghost.disabledRestartBttn" type="button" class="btn btn-default user">Restart Game</button>
+               </div>
+            </div>
+          </div>
+          <div class="widget-foot">
+            <div class="clearfix"></div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Turns information</div>
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item" ng-repeat=" t in ghost.turns track by $index">
+                       {{ t }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</section>
